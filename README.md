@@ -35,6 +35,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 0.3.0
+
+Change default public REST-API endpoint. The old one was broken.
+
 ### 0.2.3
 
 Add ability to stop ongoing verification, bugfixes and dependency updates
