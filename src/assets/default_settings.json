@@ -1,0 +1,482 @@
+{
+    "user_settings": [
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": 4,
+            "visible": false,
+            "name": "sizeof long",
+            "id": "cacsl2boogietranslator_sizeof_long",
+            "type": "int",
+            "key": "sizeof long",
+            "value": "4"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": true,
+            "name": "Pointer base address is valid at dereference",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_pointer_base_address_is_valid_at_dereference",
+            "type": "string",
+            "key": "Pointer base address is valid at dereference",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": false,
+            "visible": true,
+            "name": "Check if freed pointer was valid",
+            "id": "cacsl2boogietranslator_check_if_freed_pointer_was_valid",
+            "type": "bool",
+            "key": "Check if freed pointer was valid",
+            "value": false
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": false,
+            "name": "If two pointers are subtracted or compared they have the same base address",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_if_two_pointers_are_subtracted_or_compared_they_have_the_same_base_address",
+            "type": "string",
+            "key": "If two pointers are subtracted or compared they have the same base address",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": true,
+            "name": "Check array bounds for arrays that are off heap",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_check_array_bounds_for_arrays_that_are_off_heap",
+            "type": "string",
+            "key": "Check array bounds for arrays that are off heap",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": true,
+            "visible": false,
+            "name": "Use constant arrays",
+            "id": "cacsl2boogietranslator_use_constant_arrays",
+            "type": "bool",
+            "key": "Use constant arrays",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": true,
+            "name": "Check division by zero",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_check_division_by_zero",
+            "type": "string",
+            "key": "Check division by zero",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "OVERAPPROXIMATE_BEHAVIOUR",
+            "visible": false,
+            "name": "Behaviour of calls to undefined functions",
+            "options": ["NON_DETERMINISTIC_RETURN", "CRASH", "OVERAPPROXIMATE_BEHAVIOUR"],
+            "id": "cacsl2boogietranslator_behaviour_of_calls_to_undefined_functions",
+            "type": "string",
+            "key": "Behaviour of calls to undefined functions",
+            "value": "OVERAPPROXIMATE_BEHAVIOUR"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": 4,
+            "visible": false,
+            "name": "sizeof POINTER",
+            "id": "cacsl2boogietranslator_sizeof_pointer",
+            "type": "int",
+            "key": "sizeof POINTER",
+            "value": "4"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": true,
+            "visible": false,
+            "name": "Overapproximate operations on floating types",
+            "id": "cacsl2boogietranslator_overapproximate_operations_on_floating_types",
+            "type": "bool",
+            "key": "Overapproximate operations on floating types",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": 12,
+            "visible": false,
+            "name": "sizeof long double",
+            "id": "cacsl2boogietranslator_sizeof_long_double",
+            "type": "int",
+            "key": "sizeof long double",
+            "value": "12"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": true,
+            "name": "Pointer to allocated memory at dereference",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_pointer_to_allocated_memory_at_dereference",
+            "type": "string",
+            "key": "Pointer to allocated memory at dereference",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.boogie.procedureinliner",
+            "default": "ONLY_FOR_SEQUENTIAL_PROGRAMS",
+            "visible": false,
+            "name": "Ignore calls to procedures called more than once",
+            "options": [
+                "ALWAYS",
+                "NEVER",
+                "ONLY_FOR_CONCURRENT_PROGRAMS",
+                "ONLY_FOR_SEQUENTIAL_PROGRAMS"
+            ],
+            "id": "procedureinliner_ignore_calls_to_procedures_called_more_than_once",
+            "type": "string",
+            "key": "Ignore calls to procedures called more than once",
+            "value": "ONLY_FOR_SEQUENTIAL_PROGRAMS"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": false,
+            "visible": false,
+            "name": "Apply one-shot large block encoding in concurrent analysis",
+            "id": "traceabstraction_apply_one-shot_large_block_encoding_in_concurrent_analysis",
+            "type": "bool",
+            "key": "Apply one-shot large block encoding in concurrent analysis",
+            "value": false
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "External_ModelsAndUnsatCoreMode",
+            "visible": false,
+            "name": "SMT solver",
+            "options": [
+                "Internal_SMTInterpol",
+                "External_PrincessInterpolationMode",
+                "External_SMTInterpolInterpolationMode",
+                "External_Z3InterpolationMode",
+                "External_MathsatInterpolationMode",
+                "External_ModelsAndUnsatCoreMode",
+                "External_ModelsMode",
+                "External_DefaultMode"
+            ],
+            "id": "traceabstraction_smt_solver",
+            "type": "string",
+            "key": "SMT solver",
+            "value": "External_ModelsAndUnsatCoreMode"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "SEMANTIC",
+            "visible": false,
+            "name": "Looper check in Petri net analysis",
+            "options": ["SYNTACTIC", "SEMANTIC"],
+            "id": "traceabstraction_looper_check_in_petri_net_analysis",
+            "type": "string",
+            "key": "Looper check in Petri net analysis",
+            "value": "SEMANTIC"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "FPandBP",
+            "visible": false,
+            "name": "Compute Interpolants along a Counterexample",
+            "options": [
+                "Craig_NestedInterpolation",
+                "Craig_TreeInterpolation",
+                "ForwardPredicates",
+                "BackwardPredicates",
+                "FPandBP",
+                "FPandBPonlyIfFpWasNotPerfect",
+                "PathInvariants",
+                "PDR"
+            ],
+            "id": "traceabstraction_compute_interpolants_along_a_counterexample",
+            "type": "string",
+            "key": "Compute Interpolants along a Counterexample",
+            "value": "FPandBP"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": false,
+            "visible": false,
+            "name": "Compute procedure contracts",
+            "id": "traceabstraction_compute_procedure_contracts",
+            "type": "bool",
+            "key": "Compute procedure contracts",
+            "value": false
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in",
+            "visible": false,
+            "name": "Command for external solver",
+            "id": "traceabstraction_command_for_external_solver",
+            "type": "string",
+            "key": "Command for external solver",
+            "value": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "CAMEL",
+            "visible": false,
+            "name": "Trace refinement strategy",
+            "options": [
+                "FIXED_PREFERENCES",
+                "TAIPAN",
+                "RUBBER_TAIPAN",
+                "LAZY_TAIPAN",
+                "TOOTHLESS_TAIPAN",
+                "PENGUIN",
+                "WALRUS",
+                "CAMEL",
+                "CAMEL_NO_AM",
+                "CAMEL_SMT_AM",
+                "CAMEL_BP_ONLY",
+                "LIZARD",
+                "BADGER",
+                "WOLF",
+                "FOX",
+                "BEAR",
+                "WARTHOG",
+                "WARTHOG_NO_AM",
+                "MAMMOTH",
+                "MAMMOTH_NO_AM",
+                "SMTINTERPOL",
+                "DACHSHUND",
+                "SIFA_TAIPAN",
+                "TOOTHLESS_SIFA_TAIPAN",
+                "MCR",
+                "ACCELERATED_INTERPOLATION",
+                "ACCELERATED_TRACE_CHECK"
+            ],
+            "id": "traceabstraction_trace_refinement_strategy",
+            "type": "string",
+            "key": "Trace refinement strategy",
+            "value": "CAMEL"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "LoopHeads",
+            "visible": false,
+            "name": "Positions where we compute the Hoare Annotation",
+            "options": ["All", "LoopHeads", "LoopsAndPotentialCycles", "None"],
+            "id": "traceabstraction_positions_where_we_compute_the_hoare_annotation",
+            "type": "string",
+            "key": "Positions where we compute the Hoare Annotation",
+            "value": "LoopHeads"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "PETRI_NET",
+            "visible": false,
+            "name": "Automaton type used in concurrency analysis",
+            "options": ["FINITE_AUTOMATA", "PETRI_NET", "PARTIAL_ORDER_FA"],
+            "id": "traceabstraction_automaton_type_used_in_concurrency_analysis",
+            "type": "string",
+            "key": "Automaton type used in concurrency analysis",
+            "value": "PETRI_NET"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction",
+            "default": "DBO",
+            "visible": false,
+            "name": "Order on configurations for Petri net unfoldings",
+            "options": ["DBO", "ERV", "KMM"],
+            "id": "traceabstraction_order_on_configurations_for_petri_net_unfoldings",
+            "type": "string",
+            "key": "Order on configurations for Petri net unfoldings",
+            "value": "DBO"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.blockencoding",
+            "default": true,
+            "visible": false,
+            "name": "Use SBE",
+            "id": "blockencoding_use_sbe",
+            "type": "bool",
+            "key": "Use SBE",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.blockencoding",
+            "default": false,
+            "visible": false,
+            "name": "Create parallel compositions if possible",
+            "id": "blockencoding_create_parallel_compositions_if_possible",
+            "type": "bool",
+            "key": "Create parallel compositions if possible",
+            "value": false
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.icfgbuilder",
+            "default": "External_DefaultMode",
+            "visible": false,
+            "name": "SMT solver",
+            "options": [
+                "Internal_SMTInterpol",
+                "External_PrincessInterpolationMode",
+                "External_SMTInterpolInterpolationMode",
+                "External_Z3InterpolationMode",
+                "External_MathsatInterpolationMode",
+                "External_ModelsAndUnsatCoreMode",
+                "External_ModelsMode",
+                "External_DefaultMode"
+            ],
+            "id": "icfgbuilder_smt_solver",
+            "type": "string",
+            "key": "SMT solver",
+            "value": "External_DefaultMode"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.icfgbuilder",
+            "default": true,
+            "visible": false,
+            "name": "Only consider context switches at boundaries of atomic blocks",
+            "id": "icfgbuilder_only_consider_context_switches_at_boundaries_of_atomic_blocks",
+            "type": "bool",
+            "key": "Only consider context switches at boundaries of atomic blocks",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.icfgbuilder",
+            "default": "SequenceOfStatements",
+            "visible": false,
+            "name": "Size of a code block",
+            "options": [
+                "SingleStatement",
+                "OneNontrivialStatement",
+                "SequenceOfStatements",
+                "LoopFreeBlock"
+            ],
+            "id": "icfgbuilder_size_of_a_code_block",
+            "type": "string",
+            "key": "Size of a code block",
+            "value": "SequenceOfStatements"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.icfgbuilder",
+            "default": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in -t:4000",
+            "visible": false,
+            "name": "Command for external solver",
+            "id": "icfgbuilder_command_for_external_solver",
+            "type": "string",
+            "key": "Command for external solver",
+            "value": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in -t:4000"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder",
+            "default": "External_DefaultMode",
+            "visible": false,
+            "name": "SMT solver",
+            "options": [
+                "Internal_SMTInterpol",
+                "External_PrincessInterpolationMode",
+                "External_SMTInterpolInterpolationMode",
+                "External_Z3InterpolationMode",
+                "External_MathsatInterpolationMode",
+                "External_ModelsAndUnsatCoreMode",
+                "External_ModelsMode",
+                "External_DefaultMode"
+            ],
+            "id": "rcfgbuilder_smt_solver",
+            "type": "string",
+            "key": "SMT solver",
+            "value": "External_DefaultMode"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder",
+            "default": true,
+            "visible": false,
+            "name": "Only consider context switches at boundaries of atomic blocks",
+            "id": "rcfgbuilder_only_consider_context_switches_at_boundaries_of_atomic_blocks",
+            "type": "bool",
+            "key": "Only consider context switches at boundaries of atomic blocks",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder",
+            "default": "SequenceOfStatements",
+            "visible": false,
+            "name": "Size of a code block",
+            "options": [
+                "SingleStatement",
+                "OneNontrivialStatement",
+                "SequenceOfStatements",
+                "LoopFreeBlock"
+            ],
+            "id": "rcfgbuilder_size_of_a_code_block",
+            "type": "string",
+            "key": "Size of a code block",
+            "value": "SequenceOfStatements"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder",
+            "default": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in -t:4000",
+            "visible": false,
+            "name": "Command for external solver",
+            "id": "rcfgbuilder_command_for_external_solver",
+            "type": "string",
+            "key": "Command for external solver",
+            "value": "z3 SMTLIB2_COMPLIANT=true -memory:2024 -smt2 -in -t:4000"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.boogie.preprocessor",
+            "default": true,
+            "visible": false,
+            "name": "Use memory slicer",
+            "id": "preprocessor_use_memory_slicer",
+            "type": "bool",
+            "key": "Use memory slicer",
+            "value": true
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.core",
+            "default": "de.uni_freiburg.informatik.ultimate.lib.smtlibutils.quantifier.QuantifierPusher=ERROR;",
+            "visible": false,
+            "name": "Log level for class",
+            "id": "core_log_level_for_class",
+            "type": "string",
+            "key": "Log level for class",
+            "value": "de.uni_freiburg.informatik.ultimate.lib.smtlibutils.quantifier.QuantifierPusher=ERROR;"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": false,
+            "visible": true,
+            "name": "Check absence of data races in concurrent programs",
+            "id": "cacsl2boogietranslator_check_absence_of_data_races_in_concurrent_programs",
+            "type": "bool",
+            "key": "Check absence of data races in concurrent programs",
+            "value": false
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": "IGNORE",
+            "visible": true,
+            "name": "Check absence of signed integer overflows",
+            "options": ["IGNORE", "ASSUME", "ASSERTandASSUME"],
+            "id": "cacsl2boogietranslator_check_absence_of_signed_integer_overflows",
+            "type": "string",
+            "key": "Check absence of signed integer overflows",
+            "value": "IGNORE"
+        },
+        {
+            "plugin_id": "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator",
+            "default": false,
+            "visible": true,
+            "name": "Check assertions from assert.h",
+            "id": "cacsl2boogietranslator_check_assertions_from_assert_h",
+            "type": "bool",
+            "key": "Check assertions from assert.h",
+            "value": false
+        }
+    ]
+}

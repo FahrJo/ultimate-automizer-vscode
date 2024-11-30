@@ -93,8 +93,8 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
+        "compile": "cp -rf ./src/assets ./out/assets && tsc -p ./",
+        "watch": "cp -rf ./src/assets ./out/assets && tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src --ext ts",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
@@ -107,12 +107,12 @@
         "@types/vscode": "^1.79.1",
         "@typescript-eslint/eslint-plugin": "^5.61.0",
         "@typescript-eslint/parser": "^5.61.0",
-        "@vscode/test-electron": "^2.3.3",
+        "@vscode/test-electron": "^2.4.1",
         "esbuild": "^0.18.11",
         "eslint": "^8.44.0",
         "glob": "^10.3.10",
         "mocha": "^10.2.0",
         "prettier": "^3.0.3",
-        "typescript": "^5.1.6"
+        "typescript": "5.1.6"
     }
 }
