@@ -2,7 +2,7 @@
     "name": "ultimate-automizer",
     "displayName": "Ultimate Automizer",
     "description": "This extension runs a formal verification on the current active C file.",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "publisher": "FahrJo",
     "contributors": [
         {
